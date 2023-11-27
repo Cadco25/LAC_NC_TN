@@ -2,6 +2,10 @@
 
 This repository contains pre-processed data sets and code scripts to reproduce the purely spatial cluster analyses and predictor investigations that are described in the manuscript. Because of concerns regarding the privacy of study subjects, the annual data for the space-time cluster investigation is not provided. Please read this entire README file for details on the data and code, and how to use it. 
 
+# Ethics Approval 
+
+This study was approved by the University of Tennessee, Knoxville Institutional Review Board (UTK IRB-22-07079-XP) and the Tennessee Department of Health Institutional Review Board (TDH IRB 2021-0314). Data provided here is de-identified and aggregated (both temporally and spatially) to protect the privacy of individuals included in the study, in concordance with IRB and Data Use Agreements. 
+
 # Project directories and using `renv`
 
 This project uses the R package `renv` package to create a reproducible environment for analyses in R, including the automatic installation of packages at the developmental stage used during the original analysis. 
@@ -14,13 +18,10 @@ The `renv` package is used to create reproducible environments for R projects. I
 
 # Data sources
 
-This study was approved by the University of Tennessee, Knoxville Institutional Review Board (UTK IRB-22-07079-XP) and the Tennessee Department of Health Institutional Review Board (TDH IRB 2021-0314).
-
-Case data was provided by the North Carolina Department of Health & Human Services and the Tennessee Department of Health. Data provided here is de-identified and aggregated (both temporally and spatially) to protect the privacy of individuals included in the study, in concordance with IRB and Data Use Agreements. 
-
 Details regarding sources and processing techniques are described in "Persistent Spatial Clustering and Predictors of Pediatric La Crosse Virus Neuroinvasive Disease Risk in Eastern Tennessee and Western North Carolina, 2003-2020". Please refer to the methods in that manuscript and supplemental file "Table S1". 
 
 In brief: 
+- Case data was provided by the North Carolina Department of Health & Human Services and the Tennessee Department of Health
 - Census data was extracted from the 2000, 2010, and 2020 United States Census Bureau decennial surveys, as well as the 2020 American Community Survey; 
 - land cover data was exctracted from the 2019 National Land Cover Database; 
 - climate data was obtained from the PRISM Climate Group; 

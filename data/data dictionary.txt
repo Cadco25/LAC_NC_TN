@@ -1,0 +1,77 @@
+These datasets correspond to the manuscript titled "Persistent Spatial Clustering and Predictors of Pediatric La Crosse Virus Neuroinvasive Disease Risk in Eastern Tennessee and Western North Carolina, 2003-2020", submitted to PLoS Neglected Tropical Diseases, manuscript number XXXX. The data and associated code are included in the repository available at XXXX. Please view the README.md file (open with a text editor or view in GitHub or Zenodo) before using. Note that the datasets here are pre-processed from a variety of data sources that are described in much greater detail in the manuscript. 
+
+****Please cite the original sources of each data along with the manuscript and the DOI associated with the Zenodo repository of these data and analyses****
+
+--------------------------------------------------------------------------------
+Codebook for data file 'LAC_03to11_clean.gpkg '
+--------------------------------------------------------------------------------
+
+These data include ZIP Code Tabulation Area (ZCTA) level cases of pediatric La Crosse virus neuroinvasive disease (LACV-ND) in eastern Tennessee and western North Carolina from 2003 to 2011. It also includes the total ZCTA-level population aged 18 years and younger.
+
+Original Data Sources:
+	- Case Data: Tennessee Department of Health and North Carolina Department of Health & Human Services
+	- Population Data: United States Census Bureau 2000 and 2010 decennial census
+		- NHGIS time series tables used to standardize all data to 2010 ZCTA boundaries 
+
+ Column Names
+	GEOID10: The ZIP code associated with the ZIP code tabulation area (ZCTA)
+	GISJOIN: A unique code that can be used to join different datasets based on the ZCTA 
+	GEOGYEAR: Census year that the geographic boundary is taken from (2010 decenniel census boundaries in this case) 
+	DATAYEAR: Duplicate with "GEOGYEAR" 
+	cases_18under: Number of probable and confirmed neuroinvasive La Crosse virus disease cases in people aged 18 years and younger. 
+	pop_18under: Total number of persons aged 18 years and younger living in the ZCTA according to the 2000 decenniel census (standardized to 2010 ZCTAs). 
+	geom: Values associated with the spatial boundaries of the ZCTA 
+
+
+--------------------------------------------------------------------------------
+Codebook for data file 'LAC_12to20_clean.gpkg '
+--------------------------------------------------------------------------------
+
+These data include ZIP Code Tabulation Area (ZCTA) level cases of pediatric La Crosse virus neuroinvasive disease (LACV-ND) in eastern Tennessee and western North Carolina from 2012 to 2020. It also includes the total ZCTA-level population aged 18 years and younger.
+
+Original Data Sources:
+	- Case Data: Tennessee Department of Health and North Carolina Department of Health & Human Services
+	- Population Data: United States Census Bureau 2010 decennial census
+		- NHGIS time series tables used to standardize all data to 2010 ZCTA boundaries 
+
+ Column Names
+	GEOID10: The ZIP code associated with the ZIP code tabulation area (ZCTA)
+	GISJOIN: A unique code that can be used to join different datasets based on the ZCTA 
+	GEOGYEAR: Census year that the geographic boundary is taken from (2010 decenniel census boundaries in this case) 
+	DATAYEAR: Duplicate with "GEOGYEAR" 
+	cases_18under: Number of probable and confirmed neuroinvasive La Crosse virus disease cases in people aged 18 years and younger. 
+	pop_18under: Total number of persons aged 18 years and younger living in the ZCTA according to the 2010 decenniel census. 
+	geom: Values associated with the spatial boundaries of the ZCTA 
+
+--------------------------------------------------------------------------------
+Codebook for data file 'LAC_15to20_clean.gpkg '
+--------------------------------------------------------------------------------
+
+These data include ZIP Code Tabulation Area (ZCTA) level cases of pediatric La Crosse virus neuroinvasive disease (LACV-ND) in eastern Tennessee and western North Carolina from 20152 to 2020. It also includes the total ZCTA-level population aged 19 years and younger along with a variety of potential predictor variables. See the original manuscript for details on variable selection, data sources, and data processing techniques. 
+
+Original Data Sources:
+	- Case Data: Tennessee Department of Health and North Carolina Department of Health & Human Services
+	- Population, demographic, and socioeconomic data: United States Census Bureau 2020 American Community Survey
+	- Land cover data: 2019 National Land Cover Database
+	- Climate data: PRISM Climate Group, Oregon State University, https://prism.oregonstate.edu
+	- Elevation data: United States Geographic Service LiDAR Explorer 
+
+
+ Column Names
+	GISJOIN: A unique code that can be used to join different datasets based on the ZCTA 
+	percent_male: Percentage of people aged 19 years and younger that are male 
+	percent_poverty: Percentage of households with household income below the poverty line.
+	total_19under: Total population aged 19 years and younger
+	elevation: Median elevation of the ZCTA in meters.
+	percent_developed: Percentage of the land in the ZCTA classified as developed
+	change_developed: Change in the percentage of land in the ZCTA classified as developed from 2001 to 2019
+	percent_education: Percentage of people over the age of 25 in the ZCTA with a high school education or less
+	percent_vacant: Percentage of households in the ZCTA that are vacant
+	percent_built1969: Percentage of households in the ZCTA that were built before 1969
+	pop_dens_sqkm: The population density per square kilometer in the ZCTA
+	percent_forest: Percentage of land in the ZCTA classified as forest
+	temp_mean: The mean average temperature in the month of August from 2015-2020 in the ZCTA
+	precip_mean: The mean cumulative precipitation in the month of August from 2015-2020 in the ZCTA
+	cases_19under: Number of probable and confirmed neuroinvasive La Crosse virus disease cases in people aged 18 years and younger. 
+	pop_19under: Total number of persons aged 18 years and younger living in the ZCTA according to the 2010 decenniel census. 
+	geom: Values associated with the spatial boundaries of the ZCTA 
