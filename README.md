@@ -25,7 +25,7 @@ What you will need:
 
 ## ***Important***: Using `renv`
 
-Short Version: When you open the R project, run `renv::init()` and follow the prompts to install the necessary R packages. 
+Short Version: When you open the R project, run `renv::restore()` and follow the prompts to install the necessary R packages. 
 
 The R package `renv` was used to create a **project library**, which contains all R packages that are used by the project. The packages in the project library are **the versions used during the original analysis**. This means that if any packages are updated by developers in ways that would change the results of the analysis, this project can still produce the original results because of `renv`. When you open this project for the first time, `renv` will automatically download and install itself and ask you to run `renv::restore()`. **You should run `renv::restore()` to automatically download and install all of the packages within this reproducible environment**. 
 
@@ -35,7 +35,7 @@ The R package `renv` was used to create a **project library**, which contains al
 - 2. Extract the ZIP file anywhere on your computer (do not change the structure of the files once extracted)
 - 3. In RStudio, click *File -> Open Project* and browse to the location where you extracted the repository; in the repository file, open the LAC-NC_TN R Project file 
 - 4. Open either of the R scripts in the `analysis/` folder
-- 5. Run the code 'renv::init()' in the script or in the console and follow the prompt to install the packages 
+- 5. Run the code `renv::restore()` in the script or in the console and follow the prompt to install the packages 
   - Now you can run the R Scripts; start from the top with loading the packages and data, then work your way down line-by-line
 - 6. To run the .SAS code, open `analysis/3_LocalModel` in SAS Enterprise Guide or SAS Studio, replace directories with your directories as prompted within the file, and then run each chunk of code from top to bottom
 
