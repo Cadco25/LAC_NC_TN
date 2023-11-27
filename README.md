@@ -22,8 +22,10 @@ Details regarding sources and processing techniques are described in "Persistent
 
 In brief: 
 - Case data was provided by the North Carolina Department of Health & Human Services and the Tennessee Department of Health
-- Census data was extracted from the 2000, 2010, and 2020 United States Census Bureau decennial surveys, as well as the 2020 American Community Survey; 
-- land cover data was exctracted from the 2019 National Land Cover Database; 
+- Census boundaries were obtained from the 2010 and 2020 United States Census Bureau decennial census  
+- Census data was extracted from the 2000 and 2010 United States Census Bureau decennial censuses, as well as the 2020 American Community Survey; 
+- NHGIS time series tables were used to standardize 2000 census data to 2010 ZCTAs 
+- land cover data was extracted from the 2019 National Land Cover Database; 
 - climate data was obtained from the PRISM Climate Group; 
 - elevation was obtained using the United States Geographic Service LiDAR Explorer. 
 
