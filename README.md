@@ -33,7 +33,7 @@ The R package `renv` was used to create a **project library**, which contains al
 
 - 1. Download the entire repository by clicking "Code -> Download ZIP" on GitHub or by downloading the ZIP file in Zenodo
 - 2. Extract the ZIP file anywhere on your computer (do not change the structure of the files once extracted)
-- 3. In RStudio, click *File -> Open Project* and browse to the location where you extracted the repository; in the repository file, open the LAC-NC_TN R Project file 
+- 3. In RStudio, click *File -> Open Project* and browse to the location where you extracted the repository; in the repository file, open the LAC_NC_TN R Project file 
 - 4. Open either of the R scripts in the `analysis/` folder
 - 5. Run the code `renv::restore()` in the script or in the console and follow the prompt to install the packages 
   - Now you can run the R Scripts; start from the top with loading the packages and data, then work your way down line-by-line
@@ -74,3 +74,11 @@ The files are numbered in the order that they were run for the original analysis
 - `2_GlobalModels.R` contains code for predictor selection and identification of the final global negative binomial regression model.  
 - `3_LocalModel.SAS` contains SAS code for running the negative binomial geographically weighted regression model (i.e., local model), including the golden search selection for identifying the optimal bandwidth and the non-stationarity test. Note that this file contains code to save the results of the models (e.g., coefficients, residuals, and local p-values) in csv files that can be joined to geographic boundaries to create maps of the results. 
     - `C_GWNBR` is the SAS Macro for the negative binomial geographically weighted regression from [da Silva and Rodrigues (2016)](https://chat.openai.com/c/a6c4169e-cd13-48f9-9e7f-27df47bd29de) (see this link). 
+    
+# `renv/` Folder
+
+The `renv/` folder contains bits and pieces needed for the `renv` package. Nothing should be altered in this folder. 
+
+# Other miscelleanous files
+
+Several other files are present in the root directory. None of these need to be manipulated. The only file you will actively use is the `LAC_NC_TN` R Project file, which will open the project in RStudio and automatically set the relative paths based on the file structure of this repository. 
