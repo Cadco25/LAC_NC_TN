@@ -63,6 +63,23 @@
       ],
       "Hash": "1a00d4828f33a9d690806e98bd17150c"
     },
+    "MuMIn": {
+      "Package": "MuMIn",
+      "Version": "1.47.5",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "Matrix",
+        "R",
+        "graphics",
+        "insight",
+        "methods",
+        "nlme",
+        "stats",
+        "stats4"
+      ],
+      "Hash": "76720a11cd43c0ddeb428a4b24dc2ed1"
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.5.1",
@@ -123,6 +140,22 @@
         "R"
       ],
       "Hash": "543776ae6848fde2f48ff3816d0628bc"
+    },
+    "bayestestR": {
+      "Package": "bayestestR",
+      "Version": "0.13.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "datawizard",
+        "graphics",
+        "insight",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "61f643ea5ee9fe0e70ab0246340b3c2e"
     },
     "bit": {
       "Package": "bit",
@@ -369,6 +402,19 @@
         "methods"
       ],
       "Hash": "b4c06e554f33344e044ccd7fdca750a9"
+    },
+    "datawizard": {
+      "Package": "datawizard",
+      "Version": "0.9.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "insight",
+        "stats",
+        "utils"
+      ],
+      "Hash": "1706690277f29a2ee69d59483e21c5c6"
     },
     "dbplyr": {
       "Package": "dbplyr",
@@ -814,6 +860,19 @@
       ],
       "Hash": "80401cb5ec513e8ddc56764d03f63669"
     },
+    "insight": {
+      "Package": "insight",
+      "Version": "0.19.6",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "cc21c0957774c1602ec3324a5a47d798"
+    },
     "isoband": {
       "Package": "isoband",
       "Version": "0.2.7",
@@ -1013,6 +1072,22 @@
         "askpass"
       ],
       "Hash": "2a0dc8c6adfb6f032e4d4af82d258ab5"
+    },
+    "performance": {
+      "Package": "performance",
+      "Version": "0.10.8",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "bayestestR",
+        "datawizard",
+        "insight",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "92873fb57cc5b73fe2aa0b09056a789a"
     },
     "pillar": {
       "Package": "pillar",

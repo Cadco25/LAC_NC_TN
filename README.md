@@ -1,9 +1,11 @@
 # LAC_NC_TN
 Reproducible data analysis for La Crosse virus risk clustering and predictor analysis. 
 
-# IMPORTANT -- Directories and using `renv`
+# Project directories and using `renv`
 
-This project uses the `renv` package to create a truly reproducible environment, including the automatic installation of packages at the developmental stage used during the original analysis. You should download this project and save it anywhere on your system, but without changing any of the paths within the project. Each analysis file assumes that the file paths within the project are unchanged.
+This project uses the R package `renv` package to create a reproducible environment for analyses in R, including the automatic installation of packages at the developmental stage used during the original analysis. 
+
+You can download this project and save it anywhere on your system, but do not change any of the paths within the project. Each analysis file assumes that the file paths within the project are unchanged.
 
 ## Using `renv`
 
@@ -29,8 +31,7 @@ The `analysis/` folder contains scripts for reproducing the purely spatial clust
 The files are numbered in the order that they were run for the original analysis. In this case, none of the analyses are dependent on the others, so they can technically be used in any order.
 
 - `1_PurelySpatialClusters.R` contains code for the purely spatial cluster analysis using FlexScan
-- `2_UnivariableRegression.R` includes the correlation analysis and univariable models used to determine which potential predictors would be retained for the multivariable model. 
-- `3_MultivariableRegression.R` contains the manual backward elimination used to identify a final parsimonious model. 
-- `4_GeographicallyWeightedRegression.SAS` contains SAS code for running the negative binomial geographically weighted regression model, including the golden search selection for identifying the optimal bandwidth and the non-stationarity test. Note that this file contains code to save the results of the models (e.g., coefficients, residuals, and local p-values) in csv files that can be joined to geographic boundaries to create maps of the results. 
+- `2_GlobalModels.R` contains code for predictor selection and identification of the final global negative binomial regression model.  
+- `3_LocalModel.SAS` contains SAS code for running the negative binomial geographically weighted regression model (i.e., local model), including the golden search selection for identifying the optimal bandwidth and the non-stationarity test. Note that this file contains code to save the results of the models (e.g., coefficients, residuals, and local p-values) in csv files that can be joined to geographic boundaries to create maps of the results. 
     - `C_GWNBR` is the SAS Macro for the negative binomial geographically weighted regression from [da Silva and Rodrigues (2016)](https://chat.openai.com/c/a6c4169e-cd13-48f9-9e7f-27df47bd29de) (see this link). 
 
