@@ -6,7 +6,7 @@
 # Questions? email coreyallenday96@gmail.com 
 ################################################################################
 
-renv::snapshot()
+# Run `renv::restore()` to install all packages needed for this project. 
 
 #### Load Packages ----
 library(sf)
@@ -49,7 +49,7 @@ flex_03to11 <-  rflexscan(x=centroids_zctas$X_COORD, # x coordinates of centroid
                           y=centroids_zctas$Y_COORD, # y coordinates of centroids
                                observed = LAC_03to11$cases_18under, # total cases
                                expected = LAC_03to11$pop_18under, # total population
-                               clustersize = 30, # max cluster eize 
+                               clustersize = 30, # max cluster size 
                                name=LAC_03to11$GISJOIN, # name of areas (i.e., ZCTAS)
                                nb = nb_zctas, # spatial neighbors matrix
                                stattype = "RESTRICTED", # Restricted scan statistic
@@ -95,7 +95,7 @@ flex_12to20 <-  rflexscan(x=centroids_zctas$X_COORD, # x coordinates of centroid
                           y=centroids_zctas$Y_COORD, # y coordinates of centroids
                           observed = LAC_12to20$cases_18under, # total cases
                           expected = LAC_12to20$pop_18under, # total population
-                          clustersize = 30, # max cluster eize 
+                          clustersize = 30, # max cluster size 
                           name=LAC_12to20$GISJOIN, # name of areas (i.e., ZCTAS)
                           nb = nb_zctas, # spatial neighbors matrix
                           stattype = "RESTRICTED", # Restricted scan statistic
